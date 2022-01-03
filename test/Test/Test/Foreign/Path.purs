@@ -1,4 +1,4 @@
-module Test.Function.Uncurried where
+module Test.Foreign.Path where
 
 import Prelude
 import Test.Miraculix (TestTree, testCase, testGroup, (@?=))
