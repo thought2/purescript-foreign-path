@@ -1,13 +1,13 @@
 module Test.Main where
 
 import Prelude
-import Test.Miraculix (TestTree, runTests, testGroup)
-import Test.Foreign.Path as Test.Foreign.Path
+import Test.MiraculixLite (TestTree, runTests, testGroup)
+import Tests.Foreign.Path as Tests.Foreign.Path
 
 main = runTests tests
 
 tests :: TestTree
 tests =
-  testGroup "functions"
-    [ Test.Foreign.Path.tests
+  testGroup "foreign-path"
+    [ Tests.Foreign.Path.tests
     ]
